@@ -52,7 +52,7 @@ pragma solidity ^0.8.0;
             }
         // create getPrice function
         function getPrice(uint _orderId) public view returns (uint) {
-            PriceFeed memory priceFeed = priceFeeds[_orderId];
+            priceFeeds[_orderId];
             return priceFeed.price;
         }
         //swap token
